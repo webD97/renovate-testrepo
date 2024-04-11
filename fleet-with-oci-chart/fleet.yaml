@@ -2,4 +2,9 @@ helm:
   chart: oci://registry-1.docker.io/bitnamicharts/external-dns
   version: 7.0.2
   releaseName: external-dns
-  
+
+targetCustomizations:
+  - name: target-1
+    helm:
+      chart: oci://registry-1.docker.io/bitnamicharts/external-dns
+      version: 7.0.2
